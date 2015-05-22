@@ -1,0 +1,43 @@
+Pitch Presentation
+========================================================
+author: Greg B Watson
+date: System Date as of compile time 
+
+```{r echo=FALSE}
+format(Sys.Date(), format="%B %d %Y")
+```
+
+Purpose of Shiny App
+========================================================
+
+I created the Shiny App to complete the requirements for the **Develop Data Products** course project
+
+The Shiny App performs the following functions:
+- Load data(mtcars) from the demo databases that ship with R
+- Allow the user to select number of cylinders & type of transmission
+- Display the models with the selected number of cylanders & transmission
+- Calculate the average mpg for the models
+
+Summary of the mtcars data
+========================================================
+
+```{r echo=FALSE}
+data(mtcars)
+summary(cbind(mtcars[][2],mtcars[][9]))
+summary(cbind(mtcars[][1]))
+```
+
+Variance by Cylinder
+========================================================
+
+```{r, echo=FALSE}
+plot(mtcars$mpg,mtcars$cyl)
+```
+
+Conclusion
+========================================================
+
+As you manipulate the data note the following:
+- With 4 cylinders, manual transmission has higher average mgp
+- With 6 or more cylinders, automatic transmission has higher average mpg
+
